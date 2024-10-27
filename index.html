@@ -7,31 +7,29 @@
     <title>Exercício boas práticas de CSS</title>
     <link rel="stylesheet" href="main.css">
 </head>
+<!-- Fiz um projeto simples com o CSS puro, adicionei um espaçamento entre os produtos e renomeei os arquivos HTML e CSS apenas por questão de estética, porém são os mesmos do exercício proposto -->
 <body>
     <div class="produtos">
-        <div class="produto">
-            <img class="produto-imagem" src="https://via.placeholder.com/100x100">
-            <h4 class="produto-nome">Nome do produto</h4>
-            <p class="produto-descricao">
+        <div class="produtos__item">
+            <img class="produto__imagem" src="https://via.placeholder.com/100x100">
+            <h4 class="produto__nome">Nome do produto</h4>
+            <p class="produto__descricao">
                 Descrição do produto
             </p>
-            <button class="produto__botao">Comprar</button>
         </div>
-        <div class="produto em-destaque">
-            <img class="produto-imagem" src="https://via.placeholder.com/100x100">
-            <h4 class="produto-nome">Nome do produto</h4>
-            <p class="produto-descricao">
+        <div class="produtos__item produtos__item--destaque">
+            <img class="produto__imagem" src="https://via.placeholder.com/100x100">
+            <h4 class="produto__nome">Nome do produto</h4>
+            <p class="produto__descricao">
                 Descrição do produto
             </p>
-            <button class="produto__botao">Comprar</button>
         </div>
-        <div class="produto">
-            <img class="produto-imagem" src="https://via.placeholder.com/100x100">
-            <h4 class="produto-nome">Nome do produto</h4>
-            <p class="produto-descricao">
+        <div class="produtos__item">
+            <img class="produto__imagem" src="https://via.placeholder.com/100x100">
+            <h4 class="produto__nome">Nome do produto</h4>
+            <p class="produto__descricao">
                 Descrição do produto
             </p>
-            <button class="produto__botao">Comprar</button>
         </div>
     </div>
 </body>

@@ -1,55 +1,45 @@
+/* Reset básico e fonte */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
 
-.sections {
-  display: flex; /* Habilita o uso do Flexbox */
-  justify-content: space-between; /* Distribui os produtos com espaço entre eles */
-  width: 100%; /* O contêiner ocupa 100% da largura */
-  padding: 16px; /* Espaçamento interno da seção */
+/* Bloco: produtos */
+.produtos {
+    max-width: 640px;
+    width: 100%;
+    margin: 56px auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 1%;
+    gap: 20px; /* Espaçamento uniforme entre os itens */
+    padding: 0 20px; /* Margem lateral para ajustar o espaçamento nos cantos */
 }
 
-.produto {
-  flex: 1; /* Cada produto ocupa a mesma proporção do espaço */
-  padding: 16px; /* Espaçamento interno do produto */
-  background-color: #f5f5f5; /* Cor de fundo dos produtos */
-  text-align: center; /* Centraliza o texto */
-  margin: 0 8px; /* Adiciona margem horizontal entre os produtos */
+/* Bloco: produtos__item */
+.produto__item {
+    padding: 8px;
+} 
+
+/* Modificador: produtos__item--destaque */
+.produtos__item--destaque {
+    border: 2px solid gold;
+    background-color: #ffff42;
 }
 
-.produto__destaque-modificador {
-  background-color: #8f7af8; /* Cor de fundo diferente para o produto em destaque */
+/* Elemento: produtos__imagem */
+.produtos__imagem {
+    width: 100%;
 }
 
-.produto__imagem {
-  width: 100%; /* A imagem ocupa toda a largura do produto */
-  height: auto; /* Mantém a proporção da imagem */
+/* Elemento: produtos__nome */
+.produtos__nome {
+    font-size: 1.2em;
+    margin: 8px 0;
 }
 
-.produto__nome {
-  font-size: 1.2em; /* Tamanho da fonte do nome do produto */
-  margin: 8px 0; /* Espaçamento em cima e embaixo do nome */
-}
-
-.produto__descricao {
-  color: gray; /* Cor da descrição */
-  margin-bottom: 12px; /* Espaçamento embaixo da descrição */
-}
-
-.produto__botao {
-  margin-top: 10px; /* Espaçamento acima do botão */
-  padding: 8px 16px; /* Espaçamento interno do botão */
-  background-color: #6200ea; /* Cor de fundo do botão */
-  color: #fff; /* Cor do texto do botão */
-  border: none; /* Remove a borda do botão */
-  cursor: pointer; /* Cursor de mão ao passar o mouse */
-  font-size: 1em; /* Tamanho da fonte do botão */
-  transition: background-color 0.3s ease; /* Transição para a cor do botão */
-}
-
-.produto__botao:hover {
-  background-color: #3700b3; /* Cor de fundo do botão ao passar o mouse */
+/* Elemento: produtos__descricao */
+.produtos__descricao {
+    color: gray;
 }
